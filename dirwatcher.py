@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 __author__ = """Michael DeMory, with help from Zac Gerber, Mav Watts,
-video by Piero Madar, Nikal Morgan, Chris Warren, and David R."""
+video by Piero Madar, Nikal Morgan,
+Chris Warren, Tiffany McLean, and David R."""
 
 import os
 import sys
