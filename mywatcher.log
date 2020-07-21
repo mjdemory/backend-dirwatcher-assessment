@@ -629,3 +629,22 @@ Received SIGTERM
    Time was 0:00:33.118848
 -------------------------------------------------------
 
+
+-------------------------------------------------------
+   Running dirwatcher.py
+   PID is 70148
+   Started on 2020-07-21T12:31:38.108187
+-------------------------------------------------------
+
+watch.txt added to watchlist.
+This file: watch_file/watch.txt found: sea on line: 1
+This file: watch_file/watch.txt found: sea on line: 2
+This file: watch_file/watch.txt found: sea on line: 3
+This file: watch_file/watch.txt found: sea on line: 4
+Received SIGINT
+
+-------------------------------------------------------
+   Running dirwatcher.py
+   Time was 0:01:38.374214
+-------------------------------------------------------
+

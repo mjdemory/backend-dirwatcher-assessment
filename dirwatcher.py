@@ -21,6 +21,9 @@ exit_flag = False
 
 
 def find_magic(filename,starting_line,magic_word):
+    """Iterate though each file in the dictionary from the last line that was read looking for magic string.
+       The last position read in the dictionary is updated.
+       Filenames are the key and the value is the starting position used and the last read from."""
     line_number = 0
     with open(filename) as f:
         for line_number, line in enumerate(f):
@@ -33,6 +36,7 @@ def find_magic(filename,starting_line,magic_word):
 
 
 def watch_directory(args):
+    """Watches the specified directory and adds files to dictionary"""
     file_list = os.listdir(args.directory)
     
     add_file(file_list, args.ext)
@@ -45,6 +49,7 @@ def watch_directory(args):
         )
     
 def add_file(file_list, ext):
+    """Looks to see if files have been added to directory by comparing to file list."""
     global files
     for f in file_list:
         if f.endswith(ext) and f not in files:
@@ -52,6 +57,7 @@ def add_file(file_list, ext):
             logger.info(f'{f} added to watchlist.')
     return file_list
 def remove_file(file_list):
+    """Looks to see if files have been removed fromdirectory by comparing to file list."""
     global files
     for f in list(files):
         if f not in file_list:
